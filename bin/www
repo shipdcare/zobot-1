@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+var debug = require('debug')('zobot');
+var app = require('../app');
+var models = require("../models");
+
+app.set('port', process.env.PORT || 3000);
+
+models.sequelize
+  .authenticate()
+  .then(function(err) {
+    console.log('Connection has been established successfully.');
+  })
+  .catch(function (err) {
+    console.log('Unable to connect to the database:', err);
+  });
+
+models.sequelize.sync().then(function () {
+  var server = app.listen(app.get('port'), function() {
+    debug('Server listening on port ' + server.address().port);
+  });
+});

@@ -1,0 +1,197 @@
+html
+  head
+    title Zobot
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+    link(rel='stylesheet', type='text/css', href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.4/jquery.fullPage.min.css')
+    link(rel='stylesheet', href='/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/css/main.css')
+    link(rel='stylesheet', href='/css/font-awesome.min.css')
+    link(rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png")
+    link(rel="icon" type="image/png" href="/icons/favicon-32x32.png" sizes="32x32")
+    link(rel="icon" type="image/png" href="/icons/favicon-16x16.png" sizes="16x16")
+    link(rel="manifest" href="/icons/manifest.json")
+    link(rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5")
+    meta(name="theme-color" content="#ffffff")
+  body
+    section.section-0.fullpage
+      .site-bg-img
+      nav#nav.navbar.navbar-default.navbar-fixed-top
+        .container
+          .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar-toggle', aria-expanded='false')
+              span.sr-only
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='/')
+              img#brand-logo(src='./images/logo-light.svg')
+          #navbar-toggle.collapse.navbar-collapse
+            .navbar-right
+              ul.nav.navbar-nav
+              a#primary-get-access.btn.btn-primary.btn-sm.navbar-btn.trial-btn(href='/register') Contact us
+      .jumbotron.jumbotron-home(style='height:100%')
+        .container
+          .row
+            .col-sm-6.hidden-xs
+              .container.col-graphic
+                .row
+                  .timeline-centered
+                    article.timeline-entry.begin
+                      .timeline-entry-inner
+                        .timeline-icon(style='-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg);')
+                          i.entypo-flight
+                          |  +
+                        .timeline-label
+                          p
+                            a(href='#') Luke skywalker
+                            |  created an account via
+                            strong  Starforce mobile app promotional campaign
+                            span on 25/09/2065.
+                          p
+                            blockquote Welcome message sent.
+                    article.timeline-entry
+                      .timeline-entry-inner
+                        .timeline-icon.bg-success
+                          i.fa.fa-mobile.f-4
+                        .timeline-label
+                          h2
+                            a(href='#') Luke skywalker
+                            span  posted a status update.
+                          blockquote
+                            | Created trigger for- 
+                            span User action: Invite more friends dialog.
+                    article.timeline-entry
+                      .timeline-entry-inner
+                        .timeline-icon.bg-secondary
+                          i.fa.fa-envelope
+                        .timeline-label
+                          h2
+                            a(href='#') Luke skywalker 
+                            span purchased
+                            span  a light saber.
+                          blockquote
+                            span
+                              | Sent 
+                              span purchase confirmation
+                              |  email and sms.
+                    article.timeline-entry
+                      .timeline-entry-inner
+                        .timeline-icon.bg-info
+                          i.fa.fa-ticket
+                        .timeline-label
+                          h2
+                            a(href='#') Luke skywalker 
+                            span became
+                            span  a Jedi.
+                          blockquote Sent in-app message with coupon to starwars cafe.
+                    article.timeline-entry
+                      .timeline-entry-inner
+                        .timeline-icon.bg-warning
+                          i.fa.fa-archive
+                        .timeline-label
+                          h2
+                            a(href='#') Luke Skywalker
+                            span  ended his session that lasted for
+                            span  14 minutes.
+                            a.see-all  Know more.
+                          blockquote
+                            | User categorized as 
+                            span casual
+                            |  user. 
+                            a.see-all See all.
+                    article.timeline-entry.end
+                      .timeline-entry-inner
+                        .timeline-icon.bg-default
+                          i.fa.fa-smile-o
+            .col-sm-6.jumbo-col
+              h6
+                |Be relevent. To every customer, every time.
+              h1 Enabling apps to deliver a personalized journey to their customers
+              h4
+                |Automate customer engagement with built-in predictive intelligence of zobot.
+              button.btn.btn-info Try it now
+              h6.jumbo-plans 
+    section.container.container-works
+      .col-lg-4.col-md-4b
+        a
+          img.feature-img(src='./images/works-1.svg')
+        h3 Connect
+        p
+          | Automate the annoying parts of user analytics with our cross-platform customer journey platform on ios, android and javascript. No manual event tracking and resource tagging.
+      hr.padded.visible-xs
+      .col-lg-4.col-md-4b
+        a
+          img.feature-img(src='./images/works-2.svg')
+        h3 Analyze
+        p
+          | Analyze everything. Sessions, clicks, taps, form submissions, views and more. You're no longer limited by events you remembered to log upfront.
+      hr.padded.visible-xs
+      .col-lg-4.col-md-4b
+        a
+          img.feature-img(src='./images/works-3.svg')
+        h3 Engage
+        p
+          | Engage at just the right time with personalized email,
+          | in-app messages, SMS, surveys and interactive dialogs. Zobot is built for marketers and product teams
+    section.container-fluid.container-callout(style='padding-bottom:30px;padding-top:30px;')
+      .row
+        .container
+          .row
+            .col-md-4.col-md-push-8
+              hr.padded.hidden-xs
+              h6 One platform, from start to finish
+              h2 A better way to manage users.
+              p
+                | With Zobot, you can uncover insights that you'll actually take action on. In-coherent analytics processes and hectic event tracking are history.Track opens, clicks, and conversions. Update user journeys based on real-time results with automatic user funneling and ready-to-use templates for both mobile and web.
+              a.btn.btn-default.btn-lg.btn-features Learn more
+            .col-md-8.col-md-pull-4
+              a(href='#')
+                img.dash-img(src='./images/dash.svg')
+    section.container.container-security
+      .row
+        h3.text-center Features
+        h2.text-center Zobot automates the most irritating parts of marketing for your apps
+        p.text-center(style='max-width:950px;margin:auto;font-size:15px;')
+          | We know reaching a customer and engaging with a customer at the right time is very important for you and your business. Zobot makes marketing for digital marketers easier and saves a lot of coding time, letting you focus on your product.
+        .row
+          .col-md-4
+            .text-center
+              div
+                img(src='./images/code.svg')
+              h4 No coding required
+              p
+                | Add dozens of pre-built features to your live mobile/ web application. Publish in minutes, change tactics on the fly and analyze the performance of your efforts.
+          .col-md-4
+            .text-center
+              div
+                img(src='./images/shield.svg')
+              h4 Made for the enterprise
+              p
+                | We know the enterprise requires first-rate security and quality assurance. Thats why Zobot includes role-based access with a review process.
+          .col-md-4
+            .text-center
+              div
+                img(src='./images/time.svg')
+              h4 Trigger anytime
+              p
+                | Our auto-discovery technology means that we can identify your app screens and elements while simultaneously observing user behavior in context.
+    hr
+    section.container-fluid.container-callout-cta.text-center
+      .row
+        .container
+          span.cta-text Getting started is really easy. Be up and running in minutes.
+          a.btn.btn-lg(href='#') Sign up for free
+    hr
+    section.container.container-footer.text-center
+      div(style='font-size:14.5px;')
+        | Made with 
+        span.glyphicon.glyphicon-heart(style='color: #C8394A')
+        | 		by Zobot
+      .legal 2016 Zobot Technologies Pvt Ltd.
+    // Latest compiled and minified JavaScript
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js')
+    script(src='https://use.fontawesome.com/3e6d0c305c.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.4/jquery.fullPage.min.js')
+    script(type='text/javascript', src='/scripts/app.js')

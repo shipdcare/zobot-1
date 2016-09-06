@@ -1,0 +1,19 @@
+extends layout
+block css
+    link(rel='stylesheet', href='/css/register.css')
+block content
+    section.section-0.fullpage(style='height:100%')
+        .site-bg-img
+        nav#nav.navbar.navbar-default.navbar-fixed-top(style='background-color:transparent; border-color:transparent;')
+            .container
+                .navbar-header
+                    a.navbar-brand(href='/')
+                        img#brand-logo(src='./images/logo-light.svg',style="height:50px; width:auto;")
+        .jumbotron.jumbotron-home(style='height:100%')
+            .col-md-5.col-centered
+                h1.display-4.m-b-2.text-center#register-text Sign up with zobot
+                h2.text-center#register-notice Zobot is currently available by invite only.
+                form(method='POST' action='/login')
+                    input#email.form-control.inp(type='email', placeholder='Email', name='email')
+                    input#password.form-control.inp(type='password', placeholder='Password', name='password')
+                    button.btn.btn-primary.sign-up(type='submit') Submit
